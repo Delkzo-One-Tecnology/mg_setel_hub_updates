@@ -1,4 +1,17 @@
 {
   "schema_version": 1,
-  "modules": []
+  "modules": [
+    {
+      "id": "mg-setel-hub-teste",
+      "name": "MG Setel Hub Teste",
+      "channel": "test",
+      "version": "0.0.1-test.1",
+      "published_at": "2026-08-18T17:55:00-03:00",
+      "notes": "Versao de teste para validar o fluxo de deteccao e atualizacao.",
+      "package": {
+        "type": "zip",
+        "url": "https://github.com/delkzo-one/mg_setel_hub_updates/releases/download/mg-setel-hub-teste-0.0.1-test.1/mg-setel-hub-teste-0.0.1-test.1.zip"
+      }
+    }
+  ]
 }
