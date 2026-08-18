@@ -2,16 +2,20 @@
   "schema_version": 1,
   "modules": [
     {
-      "id": "mg-setel-hub-teste",
-      "name": "MG Setel Hub Teste",
-      "channel": "test",
-      "version": "0.0.1-test.1",
-      "published_at": "2026-08-18T17:55:00-03:00",
-      "notes": "Versao de teste para validar o fluxo de deteccao e atualizacao.",
-      "package": {
-        "type": "zip",
-        "url": "https://github.com/delkzo-one/mg_setel_hub_updates/releases/download/mg-setel-hub-teste-0.0.1-test.1/mg-setel-hub-teste-0.0.1-test.1.zip"
-      }
+      "id": "foto-codigo-sgl",
+      "version": "9.6.15",
+      "download_url": "",
+      "sha256": "",
+      "notes": []
+    },
+    {
+      "id": "contador-uls",
+      "version": "5.0.1",
+      "download_url": "https://raw.githubusercontent.com/Delkzo-One-Tecnology/mg_setel_hub_updates/main/contador-uls-5.0.1.zip",
+      "sha256": "23ac970015645c7568df92b4fb3530bcb66ab61d47bf5bbd56b2583785624b05",
+      "notes": [
+        "Atualizacao de teste do Contador de ULs para validar o fluxo do Hub."
+      ]
     }
   ]
 }
