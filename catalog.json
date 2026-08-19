@@ -24,6 +24,63 @@
       "version": "0.2.1",
       "download_url": "https://raw.githubusercontent.com/Delkzo-One-Tecnology/mg_setel_hub_updates/main/relatorios-sgl-0.2.1.zip",
       "sha256": "60436b1c819335d7bc1d382fd58e5230ffdfbd0868df130223aac484c1d4bbdc",
+      "manifest": {
+        "id": "relatorios-sgl",
+        "name": "Relatórios e Consolidação SGL",
+        "description": "Baixa, processa e consolida os relatórios de sequência de leitura do SGL em um fluxo único por contrato.",
+        "version": "0.2.1",
+        "category": "Relatórios operacionais",
+        "icon": "download",
+        "accent": "#2866a5",
+        "runtime": "Flet 0.28.3 · Selenium · processamento isolado",
+        "details": {
+          "purpose": "Automatizar a coleta dos relatórios de sequência de leitura do SGL, tratar os arquivos brutos e gerar consolidados por cidade e por contrato.",
+          "inputs": [
+            "Contrato do SGL",
+            "Referência no formato MM/AAAA",
+            "Credenciais por cidade",
+            "Pasta de saída para os arquivos"
+          ],
+          "outputs": [
+            "Arquivos originais baixados por faixa",
+            "Planilhas processadas por cidade",
+            "Consolidado final por cidade e por contrato",
+            "Log de pendências do processamento"
+          ],
+          "how_it_works": "O módulo entra no SGL com as credenciais de cada cidade, percorre as faixas de unidade de leitura, baixa os Excel correspondentes, processa os layouts suportados e salva os consolidados em uma pasta única."
+        },
+        "enabled": true,
+        "entrypoints": {
+          "windows": [
+            {
+              "type": "exe",
+              "path": "app/dist/RelatoriosSGL.exe"
+            },
+            {
+              "type": "bat",
+              "path": "app/EXECUTAR.bat"
+            }
+          ],
+          "development": []
+        },
+        "source_runtime": {
+          "working_directory": "app",
+          "venv": ".venv",
+          "requirements": "requirements.txt",
+          "probe": [
+            "flet",
+            "keyring",
+            "openpyxl",
+            "pandas",
+            "selenium",
+            "xlrd"
+          ],
+          "launch": {
+            "type": "script",
+            "value": "app_flet.py"
+          }
+        }
+      },
       "notes": [
         "Versao inicial do modulo de relatorios e consolidacao SGL no Hub."
       ]
