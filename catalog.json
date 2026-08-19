@@ -1,23 +1,32 @@
-{
-  "schema_version": 1,
-  "modules": [
-    {
-      "id": "contador-uls",
-      "version": "5.0.1",
-      "download_url": "https://raw.githubusercontent.com/Delkzo-One-Tecnology/mg_setel_hub_updates/main/contador-uls-5.0.1.zip",
-      "sha256": "23ac970015645c7568df92b4fb3530bcb66ab61d47bf5bbd56b2583785624b05",
-      "notes": [
-        "Atualizacao de teste do Contador de ULs para validar o fluxo do Hub."
-      ]
-    },
-    {
-      "id": "foto-codigo-sgl",
-      "version": "9.6.17",
-      "download_url": "https://raw.githubusercontent.com/Delkzo-One-Tecnology/mg_setel_hub_updates/main/foto-codigo-sgl-9.6.17.zip",
-      "sha256": "dd942d3400eb24dda72b2a7547ae75044bd5db109f6b571afbc67d54a896d5a9",
-      "notes": [
-        "Atualizacao 9.6.17 do Fotos e Evidencias SGL."
-      ]
-    }
-  ]
+﻿{
+    "schema_version":  1,
+    "modules":  [
+                    {
+                        "id":  "contador-uls",
+                        "version":  "5.0.1",
+                        "download_url":  "https://raw.githubusercontent.com/Delkzo-One-Tecnology/mg_setel_hub_updates/main/contador-uls-5.0.1.zip",
+                        "sha256":  "23ac970015645c7568df92b4fb3530bcb66ab61d47bf5bbd56b2583785624b05",
+                        "notes":  [
+                                      "Atualizacao de teste do Contador de ULs para validar o fluxo do Hub."
+                                  ]
+                    },
+                    {
+                        "id":  "foto-codigo-sgl",
+                        "version":  "9.6.17",
+                        "download_url":  "https://raw.githubusercontent.com/Delkzo-One-Tecnology/mg_setel_hub_updates/main/foto-codigo-sgl-9.6.17.zip",
+                        "sha256":  "dd942d3400eb24dda72b2a7547ae75044bd5db109f6b571afbc67d54a896d5a9",
+                        "notes":  [
+                                      "Atualizacao 9.6.17 do Fotos e Evidencias SGL."
+                                  ]
+                    },
+                    {
+                        "id":  "relatorios-sgl",
+                        "version":  "0.2.1",
+                        "download_url":  "https://raw.githubusercontent.com/Delkzo-One-Tecnology/mg_setel_hub_updates/main/relatorios-sgl-0.2.1.zip",
+                        "sha256":  "60436b1c819335d7bc1d382fd58e5230ffdfbd0868df130223aac484c1d4bbdc",
+                        "notes":  [
+                                      "Versao inicial do modulo de relatorios e consolidacao SGL no Hub."
+                                  ]
+                    }
+                ]
 }
