@@ -2,24 +2,15 @@
   "schema_version": 1,
   "modules": [
     {
-      "id": "foto-codigo-sgl",
-      "version": "9.6.17",
-      "download_url": "https://raw.githubusercontent.com/Delkzo-One-Tecnology/mg_setel_hub_updates/main/foto-codigo-sgl-9.6.17.zip",
-      "sha256": "dd942d3400eb24dda72b2a7547ae75044bd5db109f6b571afbc67d54a896d5a9",
-      "notes": [
-        "Atualizacao 9.6.17 do Fotos e Evidencias SGL."
-      ]
-    },
-    {
       "id": "relatorios-sgl",
-      "version": "0.2.1",
-      "download_url": "https://raw.githubusercontent.com/Delkzo-One-Tecnology/mg_setel_hub_updates/main/relatorios-sgl-0.2.1.zip",
-      "sha256": "60436b1c819335d7bc1d382fd58e5230ffdfbd0868df130223aac484c1d4bbdc",
+      "version": "0.2.2",
+      "download_url": "https://raw.githubusercontent.com/Delkzo-One-Tecnology/mg_setel_hub_updates/main/relatorios-sgl-0.2.2.zip",
+      "sha256": "670988c1a1f9a6ad01718da09c86607a0247e9a417710e519e09547fb6cf9e1b",
       "manifest": {
         "id": "relatorios-sgl",
         "name": "Relatórios e Consolidação SGL",
         "description": "Baixa, processa e consolida os relatórios de sequência de leitura do SGL em um fluxo único por contrato.",
-        "version": "0.2.1",
+        "version": "0.2.2",
         "category": "Relatórios operacionais",
         "icon": "download",
         "accent": "#2866a5",
@@ -73,19 +64,19 @@
         }
       },
       "notes": [
-        "Versao inicial do modulo de relatorios e consolidacao SGL no Hub."
+        "Atualizacao visual no padrao DEX OS para o modulo de relatorios."
       ]
     },
     {
       "id": "contador-uls",
-      "version": "5.1.0",
-      "download_url": "https://raw.githubusercontent.com/Delkzo-One-Tecnology/mg_setel_hub_updates/main/contador-uls-5.1.0.zip",
-      "sha256": "db818451af7e37215c7312fe913893ce85fff9508efd673f24e3d9663c6cdbdc",
+      "version": "5.2.0",
+      "download_url": "https://raw.githubusercontent.com/Delkzo-One-Tecnology/mg_setel_hub_updates/main/contador-uls-5.2.0.zip",
+      "sha256": "543b8bcbabefe89d26ec2c20cd6be84e8ac86ca6d5189c968b7ef6ddd6a5c8ec",
       "manifest": {
         "id": "contador-uls",
         "name": "Contador de ULs",
         "description": "Gera o acompanhamento de ULs a partir do concatenado e dos cronogramas do contrato.",
-        "version": "5.1.0",
+        "version": "5.2.0",
         "category": "Cronogramas e leituras",
         "icon": "calculate",
         "accent": "#3b6d11",
@@ -133,7 +124,70 @@
         }
       },
       "notes": [
-        "Identificação de base operacional nos cronogramas e detalhamento por base no relatório."
+        "Atualizacao visual no padrao DEX OS para o Contador de ULs."
+      ]
+    },
+    {
+      "id": "foto-codigo-sgl",
+      "version": "9.6.18",
+      "download_url": "https://raw.githubusercontent.com/Delkzo-One-Tecnology/mg_setel_hub_updates/main/foto-codigo-sgl-9.6.18.zip",
+      "sha256": "84ff14152d0f4738cb95c351979832ddf0ee2d416db679ff96673bdcac6bdefe",
+      "manifest": {
+        "id": "foto-codigo-sgl",
+        "name": "Fotos e Evidências SGL",
+        "description": "Valida fotos e códigos do SGL, controla a cobertura por polo e gera os relatórios operacionais.",
+        "version": "9.6.18",
+        "category": "Auditoria de campo",
+        "icon": "photo_camera",
+        "accent": "#a4600b",
+        "runtime": "Flet 0.86.5 · processo isolado",
+        "details": {
+          "purpose": "Apoiar a auditoria das fotos e códigos do SGL, controlando a meta de instalações aprovadas por polo.",
+          "inputs": [
+            "Concatenado do mês",
+            "Razões e códigos encontrados na base",
+            "Credenciais e acesso ao SGL"
+          ],
+          "outputs": [
+            "Relatório de instalações aprovadas",
+            "Registro técnico da auditoria",
+            "Checkpoint para retomada"
+          ],
+          "how_it_works": "Seleciona instalações elegíveis, abre as evidências no SGL, registra aprovação, reprovação ou tempo esgotado e acompanha a cobertura de cada polo."
+        },
+        "enabled": true,
+        "entrypoints": {
+          "windows": [
+            {
+              "type": "exe",
+              "path": "app/dist/ValidadorFotosCodigosSGL.exe"
+            },
+            {
+              "type": "bat",
+              "path": "app/executar.bat"
+            }
+          ],
+          "development": []
+        },
+        "source_runtime": {
+          "working_directory": "app",
+          "venv": ".venv",
+          "requirements": "requirements.txt",
+          "probe": [
+            "certifi",
+            "flet",
+            "openpyxl",
+            "selenium"
+          ],
+          "pythonpath": "src",
+          "launch": {
+            "type": "module",
+            "value": "foto_codigo"
+          }
+        }
+      },
+      "notes": [
+        "Atualizacao visual no padrao DEX OS para fotos e evidencias SGL."
       ]
     }
   ]
